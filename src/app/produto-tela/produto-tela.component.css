@@ -23,9 +23,9 @@
   .card-head {
     position: relative;
     height: 252px;
-    background: #fa782e;
+    background: #000000;
     /* Old browsers */
-    background: -moz-linear-gradient(-45deg, #fa782e 8%, #c82930 83%);
+    background: -moz-linear-gradient(-45deg, #000000 8%, #d8d8d8 83%);
     /* FF3.6-15 */
     background: -webkit-linear-gradient(-45deg, #fa782e 8%, #c82930 83%);
     /* Chrome10-25,Safari5.1-6 */
@@ -73,8 +73,9 @@
   
   .card-body {
     height: 255px;
-    background: #fff;
+    background: #110101;
     border-radius: 0 0 25px 25px;
+    color: #fff;
   }
   
   .product-title {
@@ -147,11 +148,11 @@
     border-radius: 100%;
     text-align: center;
     line-height: 23px;
-    color: #000;
+    color:#fff;
   }
   
   .ul-size li a.active {
-    background: #f35e3d;
+    background: #000000;
     color: #fff;
   }
   
@@ -255,9 +256,9 @@
 	background: #17141d;
 	opacity: 0.95;
 	overflow: hidden;
-	-webkit-box-shadow: #333 1px 3px 4px;
-	-moz-box-shadow: #333 1px 3px 4px;
-	box-shadow: #333 1px 3px 4px;
+	-webkit-box-shadow: #000000 1px 3px 4px;
+	-moz-box-shadow: #000000 1px 3px 4px;
+	box-shadow: #000000 1px 3px 4px;
 }
 
 .content {
@@ -269,7 +270,7 @@
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	background-color: #9387ab;
+	background-color: #000000;
 }
 h1 {
 	letter-spacing: 4px;
@@ -303,7 +304,7 @@ ul li {
 	text-align: center;
 	text-transform: uppercase;
 	text-decoration: none;
-	color: white;
+	color:#08d  ;
 	cursor: pointer;
 	display: inline-block;
 	letter-spacing: 3.5px;
@@ -311,14 +312,14 @@ ul li {
 }
 
 li.active {
-	color: orange;
+	color: #08d;
 	transform: scale(1.1);
 }
 
 polygon {
 	stroke-width: 2px;
-	stroke: orange;
-	fill: orange;
+	stroke: #08d;
+	fill: #08d ;
 }
 
 @media (max-device-width: 991px) {
