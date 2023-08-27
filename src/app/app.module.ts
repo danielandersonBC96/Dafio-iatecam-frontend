@@ -7,6 +7,8 @@ import { LoginComponent } from './login/login.component';
 import { FormularioComponent } from './formulario/formulario.component';
 import { ProdutoTelaComponent } from './produto-tela/produto-tela.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { CreditCardComponent } from './credit-card/credit-card.component';
+import { ProdutoDetailsComponent } from './produto-details/produto-details.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     LoginComponent,
     FormularioComponent,
     ProdutoTelaComponent,
-    DashboardComponent
+    DashboardComponent,
+    CreditCardComponent,
+    ProdutoDetailsComponent
   ],
   imports: [
     BrowserModule,

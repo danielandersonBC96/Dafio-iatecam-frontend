@@ -4,6 +4,8 @@ import { FormularioComponent } from './formulario/formulario.component';
 import { LoginComponent } from './login/login.component';
 import { ProdutoTelaComponent } from './produto-tela/produto-tela.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { CreditCardComponent } from './credit-card/credit-card.component';
+import { ProdutoDetailsComponent } from './produto-details/produto-details.component';
 
 
 
@@ -12,7 +14,12 @@ const routes: Routes = [
   {path:"" , component: ProdutoTelaComponent},
   {path:"formulario", component: FormularioComponent},
   {path:"login", component:  LoginComponent},
-  { path:"dashboard", component: DashboardComponent}
+  { path:"dashboard", component: DashboardComponent},
+  { path:'creditCard', component: CreditCardComponent},
+  { path:"Details", component: ProdutoDetailsComponent},
+
+
+
 ];
 
 @NgModule({
