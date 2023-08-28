@@ -7,6 +7,7 @@
    box-sizing: border-box;
    background-color: #060714;
    color:#CFE8FF;
+   font-family: Arial, Helvetica, sans-serif;
  }
  a {
    text-decoration: none;
@@ -606,7 +607,7 @@ body {
   }
 }
 
-body > * { max-width: 145px; margin-inline: auto}
+body > * { max-width: 100px; margin-inline: auto}
 
 
 
@@ -636,10 +637,11 @@ body > * { max-width: 145px; margin-inline: auto}
 			#edc949 100%
 	);
 	position: relative;
-	width: 700px;
+	width: 430px;
 	min-height: 350px;
 	margin: 10;
 	outline: 1px solid #ccc;
+  overflow-x: hidden;
 }
 .pie-chart h2 {
 	position: absolute;
@@ -677,4 +679,14 @@ body > * { max-width: 145px; margin-inline: auto}
   left: 0px;
 
 
+}
+
+td{
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+span{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 200;
 }
