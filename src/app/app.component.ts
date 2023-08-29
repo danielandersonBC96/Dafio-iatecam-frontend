@@ -8,30 +8,10 @@ import { ProductsService } from './services/products.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit {
+export class AppComponent  {
   title = 'my-app'; 
 
-  product = {} as Products 
-  produtos:Products[]
-
-  constructor(private  productSevice : ProductsService) {}
   
-
-
-
-  ngOnInit() {
-    //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
-    //Add 'implements OnInit' to the class.
-    
-  this. getProduct()
-    }
-
- getProduct( ){
-
-  return this.productSevice.getProduct().subscribe ((produtos:Products[]) => {
-
-      this.produtos = produtos
-  })}
  }
 
 

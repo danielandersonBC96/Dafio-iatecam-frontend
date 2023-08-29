@@ -1,4 +1,4 @@
-import { Component, NgModule } from '@angular/core';
+import { Component, NgModule  ,CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { FormularioComponent } from './formulario/formulario.component';
 import { LoginComponent } from './login/login.component';
@@ -24,6 +24,9 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA
+  ],
 })
 export class AppRoutingModule { }

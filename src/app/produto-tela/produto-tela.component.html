@@ -1,124 +1,74 @@
 
 
 
-
-    <div class="header" >
-        <div class="menu">
-         <svg class="line-top" width="750" height="15" viewbox="0,0 1000,20">
-          <line
-           class="line-dash"
-           x1="0"
-           y1="15"
-           x2="1000"
-           y2="15"
-           style="stroke:#08d; stroke-width:2; stroke-linecap:round; stroke-dasharray: 180,1200; stroke-dashoffset: -35;"
-          />
-         </svg>
-         <ul>
-          <li>Home</li><li>Gallery</li><li>Contact</li><li>sing in </li>
-         </ul>
-         <svg class="line-bottom" width="750" height="30" viewbox="0,0 1000,40">
-          <polygon class="lb" points="35,53 115,53 125,43 135,53 215,53" />
-          <polygon class="lb" points="285,53 365,53 375,43 385,53 465,53" />
-       
-          <polygon class="lb" points="535,53 615,53 625,43 635,53 715,53" />
-       
-          <polygon class="lb" points="785,53 865,53 875,43 885,53 965,53" />
-         </svg>
-        </div>
-       </div>
-       <div class="content">
-        <h1>Welcome to Walmart</h1>
-       </div>
-       
-   
+<div class="header" >
+  <div class="menu">
+   <svg class="line-top" width="750" height="15" viewbox="0,0 1000,20">
+    <line
+     class="line-dash"
+     x1="0"
+     y1="15"
+     x2="1000"
+     y2="15"
+     style="stroke:#08d; stroke-width:2; stroke-linecap:round; stroke-dasharray: 180,1200; stroke-dashoffset: -35;"
+    />
+   </svg>
+   <ul>
+    <li>Home</li><li>Gallery</li><li>Contact</li><li>sing in </li>
+   </ul>
+   <svg class="line-bottom" width="750" height="30" viewbox="0,0 1000,40">
+    <polygon class="lb" points="35,53 115,53 125,43 135,53 215,53" />
+    <polygon class="lb" points="285,53 365,53 375,43 385,53 465,53" />
+ 
+    <polygon class="lb" points="535,53 615,53 625,43 635,53 715,53" />
+ 
+    <polygon class="lb" points="785,53 865,53 875,43 885,53 965,53" />
+   </svg>
+  </div>
+ </div>
+ <div class="content">
+  <h1>Welcome to Walmart</h1>
+ </div>
      
-    <h1> Produtcs</h1>
-   
-    <div class="container">
-        <div class="card">
-          <div class="card-head">
-          
-            <div class="product-detail">
-              <h2>Hartbeespoort</h2> Support and Nike Zoom Air come together for a more supportive feel with high-speed responsiveness
-            </div>
-            <span class="back-text">
-                    FAS
-                  </span>
-          </div>
-          <div class="card-body">
-            <div class="product-desc">
-              <span class="product-title">
-                      Hartbee<b>spoort</b>
-                      <span class="badge">
-                        New
-                      </span>
-              </span>
-              <span class="product-caption">
-                      Basket Ball Collection
-                    </span>
-              <span class="product-rating">
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star grey"></i>
-                    </span>
-            </div>
-            <div class="product-properties">
-              <span class="product-size">
-                      <h4>Size</h4>
-                      <ul class="ul-size">
-                        <li><a href="#">7</a></li>
-                        <li><a href="#">8</a></li>
-                        <li><a href="#">9</a></li>
-                        <li><a href="#" class="active">10</a></li>
-                        <li><a href="#">11</a></li>
-                      </ul>
-                    </span>
-              <span class="product-color">
-                      <h4>Colour</h4>
-                      <ul class="ul-color">
-                        <li><a href="#" class="orange active"></a></li>
-                        <li><a href="#" class="green"></a></li>
-                        <li><a href="#" class="yellow"></a></li>
-                      </ul>
-                    </span>
-              <span class="product-price">
-                      USD<b id="price">  </b>
-                    </span>
-            </div>
-          </div>
-        </div>
-    </div>
-      
-      
-     
-   
-      <footer>
-        <div class="menu">
-          <svg class="line-top" width="750" height="15" viewbox="0,0 1000,20">
-           <line
-            class="line-dash"
-            x1="0"
-            y1="15"
-            x2="1000"
-            y2="15"
-            style="stroke:#08d; stroke-width:2; stroke-linecap:round; stroke-dasharray: 180,1200; stroke-dashoffset: -35;"
-           />
-          </svg>
-          <ul>
-           <li>Home</li><li>Gallery</li><li>Contact</li><li>sing in </li>
-          </ul>
 
-       
+     <h1>Products</h1>
+   <div class="car-padding">
+        <div class="row product-details" *ngFor="let produto of  produtos">
+                  
+          <div class="card">
+
+            <div class="image-card">
+
+             <img src="{{produto.imageUrl}}"/>
+
+            </div>
+
+            
+
+            <div class="description">
+             <h2>{{produto.name}}</h2>
+             <h3> {{produto.categori}}</h3>
+             <p> price : {{ produto.price}}</p>
+             <a   routerLink="/Details"  >  Details </a>
+            
+            </div>
+
+          </div>
+                
+            
+         </div>
          
-        </div>
-        
-      
 
-      </footer>
 
+
+    </div>  
+     
+   
+    
+<footer class="header">
+  <li>Home</li><li>Gallery</li><li>Contact</li><li>sing in </li>
+
+</footer>
       
  
 

@@ -3,17 +3,17 @@
 
   <h1> Products Details </h1>
       
-      <div class="container">
+      <div class="container  "  >
   
           <div class="card">
-            <div class="card-body py-5 px-4">
-          <h6 class="card-title text-muted">XD File App</h6>
-          <h2 class="text">Get Card UI Ecommerce Module</h2>
-           <h3 class="Price pt-3"><i class="fa fa-dollar mr-1"></i>1890.50</h3>
-          <p class="card-text text-muted">Staple and skinny,grinder adffogato, dark<br>Sweet and flavourful</p>
+            <div class="card-body py-5 px-4" *ngFor=" let  produto of  produtos" >
+          <h6 class="card-title text-muted"> <img src="{{produto.imageUrl}}"/></h6>
+          <h2 class="text"> {{ produto.name}}   </h2>
+           <h3 class="Price pt-3"><i class="fa fa-dollar mr-1"></i> urs {{produto.price}}</h3>
+          <p class="card-text text-muted "> {{ produto.description}}</p>
           <button>Add to Cart</button> 
           <button> Buy Now</button> 
-          <footer class="footer text-muted pt-5"><p class="mytext mt-3">Offer valid starting 21 July 2020<br>Through 26 July 2020</p></footer>
+          <footer class="footer text-muted pt-5"><p class="mytext mt-3"> In countInStock: {{produto. countInStock}}</footer>
           </div>
           </div>
       
